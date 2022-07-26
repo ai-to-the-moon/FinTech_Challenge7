@@ -63,6 +63,7 @@ FROM PYPL
 INNER JOIN GDOT ON GDOT.time = PYPL.time
 INNER JOIN GS ON GS.time = PYPL.time
 INNER JOIN SQ ON SQ.time = PYPL.time
+"""
 
 etf_portfolio = pd.read_sql_query(query, engine)
 ```
